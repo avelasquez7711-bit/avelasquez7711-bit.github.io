@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angel Velasquez | Computer Science Student</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Devicons CDN for Tech Stack Logos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+    <!-- FontAwesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- TOP NAVIGATION HEADER -->
+    <header class="top-header">
+        <div class="header-container">
+            <nav class="top-nav">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Split Wrapper -->
+    <div class="layout-container">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+
+                <!-- Photo Container -->
+                <div class="profile-photo-container">
+                    <img src="./AngelV.jpg" alt="Angel Velasquez" class="profile-photo" />
+                </div>
+
+                <div class="profile-greeting">Hello!</div>
+                <h1 class="profile-name">I'm <span class="highlight">Angel Velasquez</span></h1>
+                <h2 class="profile-title">B.S. Computer Science @ Stanford University</h2>
+
+                <p class="profile-bio">
+                    Passionate about Machine Learning, Computer Vision, and Full-Stack Development.
+                </p>
+
+                <!-- Contact Links & Socials -->
+                <div class="sidebar-contact">
+                    <a href="mailto:avelasq@stanford.edu" class="contact-email">
+                        <i class="fa-regular fa-envelope"></i> avelasq@stanford.edu
+                    </a>
+
+                    <div class="social-links">
+                        <a href="https://github.com/angelvelasquez" target="_blank" aria-label="GitHub"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com/in/angelvelasquez" target="_blank" aria-label="LinkedIn"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+
+        <!-- RIGHT CONTENT AREA -->
+        <main class="main-content">
+
+            <!-- About Section -->
+            <section id="about" class="section">
+                <h2 class="section-title">About</h2>
+                <div class="about-card">
+                    <p>
+                        Hey! I'm a sophomore studying Computer Science (AI track) at Stanford,
+                        passionate about building machine learning models and turning them into
+                        real-world software applications. I was inspired to pursue tech by Big Hero 6
+                        and Mark Rober's engineering projects. Outside of code, I like listening
+                        to rock music, trying out new sweets, and playing volleyball. I'm currently
+                        seeking Software Engineering and Machine Learning internship opportunities. Feel
+                        free to reach out if you'd like to connect!
+                    </p>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="section">
+                <h2 class="section-title">Projects</h2>
+
+                <div class="projects-list">
+
+                    <!-- PROJECT 1 -->
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="https://via.placeholder.com/600x350/0f1922/008b8b?text=Brain+Tumor+Detection+App"
+                                alt="Brain Tumor Detection Demo" class="project-gif" />
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Brain Tumor Detection & Classification</h3>
+
+                            <div class="tech-stack">
+                                <span class="badge"><i class="devicon-pytorch-original colored"></i> PyTorch</span>
+                                <span class="badge"><i class="devicon-python-plain colored"></i> Scikit-Learn</span>
+                                <span class="badge"><i class="devicon-python-plain colored"></i> Streamlit</span>
+                            </div>
+
+                            <p class="project-description">
+                                Developed a Deep Convolutional Neural Network (CNN) to classify 7,200+ brain MRI scans
+                                across 4 clinical categories, deployed with an interactive Streamlit inference
+                                dashboard.
+                            </p>
+
+                            <div class="metrics-box">
+                                <ul>
+                                    <li><strong>93.9% Test Accuracy</strong> & <strong>97.6%+ Recall</strong> on unseen
+                                        external datasets using Cross-Entropy loss.</li>
+                                    <li><strong>16% Recall Boost</strong> on Glioma class via custom data augmentation
+                                        (rotation, contrast jitter, normalization).</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" class="btn-link"><i
+                                        class="fa-brands fa-github"></i> Source</a>
+                                <a href="https://streamlit.io" target="_blank" class="btn-link"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i> Project Site</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 2 -->
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="https://via.placeholder.com/600x350/0f1922/008b8b?text=Algo+Visualizer+App"
+                                alt="Algorithm Visualizer Demo" class="project-gif" />
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Algorithm Performance Visualizer</h3>
+
+                            <div class="tech-stack">
+                                <span class="badge"><i class="devicon-python-plain colored"></i> Python</span>
+                                <span class="badge"><i class="devicon-fastapi-plain colored"></i> FastAPI</span>
+                                <span class="badge"><i class="devicon-react-original colored"></i> React</span>
+                                <span class="badge"><i class="devicon-tailwindcss-plain colored"></i> Tailwind
+                                    CSS</span>
+                            </div>
+
+                            <p class="project-description">
+                                Engineered a full-stack web app visualizing real-time memory allocation and
+                                time-complexity metrics across 6 core algorithms using custom Chart.js dashboards.
+                            </p>
+
+                            <div class="metrics-box">
+                                <ul>
+                                    <li><strong>FastAPI REST Engine:</strong> Returns structured JSON algorithmic
+                                        benchmarks across custom data distributions.</li>
+                                    <li><strong>CI/CD Deployment:</strong> Automated production pipelines integrated
+                                        with Vercel and Render.</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" class="btn-link"><i
+                                        class="fa-brands fa-github"></i> Source</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- PROJECT 3 -->
+                    <article class="project-card">
+                        <div class="project-media">
+                            <img src="https://via.placeholder.com/600x350/0f1922/008b8b?text=Space+Shooter+Game"
+                                alt="Space Shooter Game Preview" class="project-gif" />
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Mini Space Shooter Game</h3>
+
+                            <div class="tech-stack">
+                                <span class="badge"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                                <span class="badge"><i class="devicon-html5-plain colored"></i> HTML5 Canvas</span>
+                                <span class="badge"><i class="devicon-flask-original colored"></i> Flask</span>
+                            </div>
+
+                            <p class="project-description">
+                                Remastered a Python desktop game into a 60 FPS full-stack web game featuring
+                                object-oriented JS engine mechanics and a Flask REST API backend for leaderboards.
+                            </p>
+
+                            <div class="metrics-box">
+                                <ul>
+                                    <li><strong>Performance Optimized:</strong> Sub-16ms input latency and collision
+                                        processing for 20+ active entities.</li>
+                                    <li><strong>Leaderboard Integration:</strong> REST API endpoints integrated with
+                                        asynchronous client-side Fetch calls.</li>
+                                </ul>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="https://github.com" target="_blank" class="btn-link"><i
+                                        class="fa-brands fa-github"></i> Source</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="section">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">AI Research Fellow</h3>
+                                <h4 class="timeline-org">AI4ALL Ignite • Virtual</h4>
+                            </div>
+                            <span class="timeline-date">May 2026 – Present</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Selected for a competitive national AI accelerator providing 40+ hours of advanced
+                                machine learning training and ethical AI principles.</li>
+                            <li>Captained a 6-engineer team building and evaluating an end-to-end computer vision
+                                medical imaging pipeline.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">Outreach Director</h3>
+                                <h4 class="timeline-org">Society of Latinx Engineers (SOLE) • Palo Alto, CA</h4>
+                            </div>
+                            <span class="timeline-date">Oct 2025 – Present</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Designed and launched a STEM bridge program expanding STEM access for 30+
+                                underrepresented high school seniors.</li>
+                            <li>Organized 3 career panels featuring 11 Latinx alumni, attracting 50+ attendees to expand
+                                student networks.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="timeline-title">CS Academic Mentor</h3>
+                                <h4 class="timeline-org">Computer Science Academic Mentorship • Los Angeles, CA</h4>
+                            </div>
+                            <span class="timeline-date">Oct 2024 – Jun 2026</span>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Designed a hands-on Python OOP and game mechanics curriculum for 20+ high school
+                                students.</li>
+                            <li>Guided 5+ student capstone teams through full development lifecycles and collision
+                                detection implementation.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <h2 class="section-title">Skills & Tools</h2>
+
+                <div class="tech-grid">
+                    <div class="tech-item"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+                    <div class="tech-item"><i class="devicon-cplusplus-plain colored"></i><span>C/C++</span></div>
+                    <div class="tech-item"><i class="devicon-pytorch-original colored"></i><span>PyTorch</span></div>
+                    <div class="tech-item"><i class="devicon-tensorflow-original colored"></i><span>TensorFlow</span></div>
+                    <div class="tech-item"><i class="devicon-opencv-plain colored"></i><span>OpenCV</span></div>
+                    <div class="tech-item"><i class="devicon-pandas-original colored"></i><span>Pandas</span></div>
+                    <div class="tech-item"><i class="devicon-numpy-original colored"></i><span>NumPy</span></div>
+                    <div class="tech-item"><i class="devicon-flask-original colored"></i><span>Flask</span></div>
+                    <div class="tech-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+                    <div class="tech-item"><i class="devicon-html5-plain colored"></i><span>HTML5/CSS3</span></div>
+                    <div class="tech-item"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+                    <div class="tech-item"><i class="devicon-linux-plain colored"></i><span>Linux</span></div>
+                    <div class="tech-item"><i class="devicon-vscode-plain colored"></i><span>VS Code</span></div>
+                    <div class="tech-item"><i class="devicon-jupyter-plain colored"></i><span>Jupyter</span></div>
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="section">
+                <h2 class="section-title">Education</h2>
+
+                <div class="education-card">
+                    <div class="edu-header">
+                        <div>
+                            <h3 class="edu-school">Stanford University</h3>
+                            <h4 class="edu-degree">Bachelor of Science in Computer Science</h4>
+                        </div>
+                        <span class="edu-date">Expected Jun 2029</span>
+                    </div>
+                    <p class="edu-courses"><strong>Relevant Coursework:</strong> Computer Systems (C/C++, x86),
+                        Differential Equations & Fourier Methods with Linear Algebra, Information Science and
+                        Engineering.</p>
+                </div>
+
+                <div class="honors-box">
+                    <h3>Certifications & Honors</h3>
+                    <ul>
+                        <li><strong>QuestBridge National College Match Scholar:</strong> Stanford University Full-Ride
+                            Recipient (2024 – Present)</li>
+                        <li><strong>Thrive Scholars Fellow:</strong> 6-Year Academic Leadership & Career Program (2024 –
+                            Present)</li>
+                        <li><strong>Python Developer Certification:</strong> freeCodeCamp (Jul 2026)</li>
+                        <li><strong>IBM Deep Learning Professional Certificate:</strong> Coursera (In Progress)</li>
+                        <li><strong>California Seal of Biliteracy:</strong> Spanish (2025)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-left">
+                        <h3 class="footer-name">Angel Velasquez</h3>
+                        <p class="footer-sub">B.S. Computer Science @ Stanford University</p>
+                    </div>
+
+                    <nav class="footer-nav">
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#education">Education</a>
+                    </nav>
+                </div>
+            </footer>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>
