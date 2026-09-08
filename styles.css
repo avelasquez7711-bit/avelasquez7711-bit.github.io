@@ -15,7 +15,7 @@
   --accent-peacock-dim: rgba(0, 139, 139, 0.12);
   --accent-peacock-hover: rgba(0, 139, 139, 0.25);
 
-  --font-main: "Fira Code", Consolas, Monaco, "Courier New", monospace; */
+  --font-main: "Fira Code", Consolas, Monaco, "Courier New", monospace;
   --border-radius-sharp: 6px;
 }
 
@@ -53,7 +53,7 @@ body {
   background-color: var(--header-bg);
   backdrop-filter: blur(10px);
   z-index: 1000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
 }
 
 .header-container {
@@ -227,7 +227,7 @@ body {
   background-color: var(--card-bg);
   padding: 25px;
   border-radius: var(--border-radius-sharp);
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 2px solid rgba(255, 255, 255, 0.04);
 }
 
 .about-card p {
@@ -249,7 +249,7 @@ body {
   background-color: var(--card-bg);
   border-radius: var(--border-radius-sharp);
   padding: 25px;
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 2px solid rgba(255, 255, 255, 0.04);
   display: grid;
   grid-template-columns: 400px 1fr;
   gap: 25px;
@@ -263,14 +263,15 @@ body {
 
 .project-media {
   width: 100%;
+  height: 100%;
 }
 
 .project-gif {
   width: 100%;
-  height: 180px;
+  height: 100%;
   object-fit: cover;
   border-radius: var(--border-radius-sharp);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.05);
 }
 
 .project-title {
@@ -295,7 +296,7 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  border: 1px solid rgba(0, 139, 139, 0.25);
+  border: 2px solid rgba(0, 139, 139, 0.25);
 }
 
 .project-description {
@@ -356,7 +357,7 @@ body {
   background-color: var(--card-bg);
   padding: 25px;
   border-radius: var(--border-radius-sharp);
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 2px solid rgba(255, 255, 255, 0.04);
 }
 
 .timeline-header {
@@ -404,7 +405,7 @@ body {
 
 .tech-item {
   background-color: var(--card-bg);
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 2px solid rgba(255, 255, 255, 0.04);
   padding: 18px 10px;
   border-radius: var(--border-radius-sharp);
   display: flex;
@@ -437,7 +438,7 @@ body {
   background-color: var(--card-bg);
   padding: 25px;
   border-radius: var(--border-radius-sharp);
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 2px solid rgba(255, 255, 256, 0.04);
   margin-bottom: 25px;
 }
 
