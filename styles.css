@@ -13,15 +13,9 @@
   --accent-peacock: #008b8b;      /* Dark Cyan/Peacock Blue */
   --accent-peacock-dark: #005f73;
   --accent-peacock-dim: rgba(0, 139, 139, 0.12);
-  --accent-peacock-hover: rgba(0, 139, 139, 0.25);
 
   --font-main: "Fira Code", Consolas, Monaco, "Courier New", monospace;
   --border-radius-sharp: 6px;
-}
-
-::selection {
-  background-color: var(--accent-peacock-hover);
-  color: var(--accent-peacock);
 }
 
 * {
@@ -51,9 +45,8 @@ body {
   left: 0;
   width: 100%;
   background-color: var(--header-bg);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
   z-index: 1000;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.05);
 }
 
 .header-container {
@@ -88,8 +81,8 @@ body {
    ========================================================================== */
 .layout-container {
   display: flex;
-  max-width: 1400px;
-  margin: 60px auto 0;
+  max-width: 1600px;
+  margin: 50px;
   min-height: calc(100vh - 60px);
 }
 
@@ -103,7 +96,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 /* Profile Photo Styling */
@@ -118,7 +110,7 @@ body {
   height: 100%;
   object-fit: cover;
   border-radius: var(--border-radius-sharp);
-  border: 2px solid var(--accent-peacock);
+  /* border: 2px solid var(--accent-peacock); */
 }
 
 .profile-greeting {
@@ -199,7 +191,7 @@ body {
    SECTIONS & UNDERLINED HEADERS
    ========================================================================== */
 .section {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .section-title {
@@ -208,8 +200,8 @@ body {
   font-weight: 800;
   display: inline-block;
   position: relative;
-  margin-bottom: 35px;
-  padding-bottom: 8px;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
 }
 
 .section-title::after {
@@ -217,7 +209,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 55px;
+  width: 60px;
   height: 4px;
   background-color: var(--accent-peacock);
   border-radius: 2px;
@@ -233,7 +225,7 @@ body {
 .about-card p {
   color: var(--text-sub);
   font-size: 1.05rem;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 /* ==========================================================================
